@@ -6,10 +6,13 @@ import TextField from '@mui/material/TextField'
 import Stack from '@mui/material/Stack'
 import Container  from '@mui/material/Container'
 
+
+
 const SearchPage = () => {
 
     const [query, setQuery] = useState("")
     const navigate = useNavigate()
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         navigate(`/search/${query}`)

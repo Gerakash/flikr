@@ -3,13 +3,11 @@ import SearchPage from "../SearchPage";
 import SearchResult from "../SearchResult";
 import './App.css';
 
+
+
 function App() {
   return (
-
       <BrowserRouter>
-      <h1>
-        Gera
-      </h1>
       <Routes>
         <Route path="/" element={<SearchPage/>}>
           <Route index element={<p>Enter Search</p>}/>
